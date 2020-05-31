@@ -28,7 +28,8 @@ android {
     }
     defaultConfig {
         applicationId "com.example.android.gdgfinder"
-        minSdkVersion 19
+//        minSdkVersion 19                              // gives dex size error
+        minSdkVersion 25
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -93,4 +94,7 @@ dependencies {
 
     // Client for retrieving location
     implementation "com.google.android.gms:play-services-location:$version_play_services"
+
+    // Material Design
+    implementation "com.google.android.material:material:$version_material"
 }
